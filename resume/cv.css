@@ -72,7 +72,7 @@ a:hover{
     padding: 0;
 } 
   .skill-name {
-    height: 30px;
+    height: 50px;
     display: flex;
     align-items: center;
 }
@@ -91,7 +91,7 @@ a:hover{
 } 
 .skill-level {
     padding-left: 20px;
-    height: 30px;
+    height: 50px;
     border-left: 2px solid white;
 }
 .skill-level-noline {
