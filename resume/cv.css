@@ -72,7 +72,7 @@ a:hover{
     padding: 0;
 } 
   .skill-name {
-    height: 50px;
+    height: 30px;
     display: flex;
     align-items: center;
 }
@@ -91,7 +91,7 @@ a:hover{
 } 
 .skill-level {
     padding-left: 20px;
-    height: 50px;
+    height: 30px;
     border-left: 2px solid white;
 }
 .skill-level-noline {
@@ -129,15 +129,15 @@ h5 {
         grid-auto-rows: minmax(60px,auto);
         grid-gap: 1px;
         max-width: 960px;
+        width: 100%;
         margin: 0 auto;
         grid-template-areas:
         "header "
         "section"
         "main "
+        "empty-sidebar"
     }
-    .empty-sidebar{
-        display: none;
-    }
+    
 }
 
 
