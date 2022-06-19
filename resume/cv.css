@@ -129,7 +129,6 @@ h5 {
         grid-auto-rows: minmax(60px,auto);
         grid-gap: 1px;
         max-width: 960px;
-        width: 100%;
         margin: 0 auto;
         grid-template-areas:
         "header "
