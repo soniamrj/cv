@@ -10,13 +10,18 @@ body{
 #content{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: minmax(100px,auto);
+    grid-auto-rows: minmax(60px,auto);
     grid-gap: 1px;
     max-width: 960px;
     margin: 0 auto;
     grid-template-areas:
     "header header header"
     "section main main"
+    "empty-sidebar main main"
+}
+.empty-sidebar{
+    grid-area: empty-sidebar;
+    background-color: #004f92;
 }
 header{
     grid-area: header;
@@ -41,11 +46,7 @@ section{
     display: grid;
     grid-gap: 1px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(12,minmax(60px,auto));
-}
-.empty-sidebar{
-    grid-row-end: 13;
-    grid-row-start: 7;
+    grid-template-rows: repeat(6,minmax(60px,auto));
 }
 section div{
     background-color: #004f92;
@@ -60,6 +61,7 @@ a:hover{
     font-weight: bolder;
 }
 /* make circles */
+
 .titles{
     color: #004f92;
 }
@@ -68,20 +70,17 @@ a:hover{
     justify-content: space-between;
     box-sizing: content-box;
     padding: 0;
-}
-  
+} 
   .skill-name {
     height: 30px;
     display: flex;
     align-items: center;
 }
-  
 .skill-level {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-  
 .ball {
     width: 2px;
     height: 2px;
@@ -89,8 +88,7 @@ a:hover{
     border-radius: 50%;
     margin: 0 5px;
     background-color: white;
-}
-  
+} 
 .skill-level {
     padding-left: 20px;
     height: 30px;
@@ -103,7 +101,6 @@ a:hover{
     justify-content: space-between;
     align-items: center;
 }
-
 .ball.full {
     background-color: rgb(71, 129, 255);
 }
@@ -112,7 +109,6 @@ h5 {
     font-size: 24px;
     letter-spacing: 1px;
 }
-  
 .skill-name {
     font-size: 18px;
     margin-right: 35px;
@@ -122,9 +118,26 @@ h5 {
     font-size: 24px;
     letter-spacing: 1px;
 }
-  
 .skill-name {
     font-size: 18px;
+}
+@media screen and (max-width: 670px) {
+    
+    #content{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-rows: minmax(60px,auto);
+        grid-gap: 1px;
+        max-width: 960px;
+        margin: 0 auto;
+        grid-template-areas:
+        "header "
+        "section"
+        "main "
+    }
+    .empty-sidebar{
+        display: none;
+    }
 }
 
 
