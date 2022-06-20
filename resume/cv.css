@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -33,10 +35,10 @@ main{
     grid-area: main;
     color: #1b1b1b;
     margin-top: 15%;
-    margin-left: 2%;
+    margin-left: 5%;
 }
 ul{
-    list-style-position: outside;
+   list-style-position: inside;
 }
 section{
     grid-area: section;
@@ -125,6 +127,7 @@ h5 {
     
     #content{
         display: grid;
+        align-content: space-around;
         grid-template-columns: 100%;
         grid-auto-rows: minmax(60px,auto);
         grid-gap: 1px;
@@ -134,9 +137,10 @@ h5 {
         "header "
         "section"
         "main "
-        "empty-sidebar"
     }
-    
+    .empty-sidebar{
+        display: none;
+    }
 }
 
 
